@@ -12,7 +12,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [QBApplication sharedApplication].applicationId = 14325;
+    [QBConnection registerServiceKey:@"GafPfbAPuJPBuyh"];
+    [QBSettings setAuthorizationSecret:@"BynR6rqmJnhMSQU"];
+    [QBSettings setAccountKey:@"dFyArsEvoYXKCLSKAspy"];
+    
+    [QBRequest createSessionWithSuccessBlock:^(QBResponse *response, QBASession *session) {
+        // session created
+    } errorBlock:^(QBResponse *response) {
+        // handle errors
+        NSLog(@"%@", response.error);
+    }];
+    
     return YES;
 }
 							
