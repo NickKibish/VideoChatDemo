@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4333059F19C45CC500E94316 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333059E19C45CC500E94316 /* Foundation.framework */; };
+		433305A119C45CC500E94316 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433305A019C45CC500E94316 /* CoreGraphics.framework */; };
+		433305A319C45CC500E94316 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433305A219C45CC500E94316 /* UIKit.framework */; };
+		433305A919C45CC500E94316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 433305A719C45CC500E94316 /* InfoPlist.strings */; };
+		433305AB19C45CC500E94316 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 433305AA19C45CC500E94316 /* main.m */; };
+		433305AF19C45CC500E94316 /* NKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 433305AE19C45CC500E94316 /* NKAppDelegate.m */; };
+		433305B219C45CC600E94316 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433305B019C45CC600E94316 /* Main_iPhone.storyboard */; };
+		433305B519C45CC600E94316 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 433305B319C45CC600E94316 /* Main_iPad.storyboard */; };
+		433305B819C45CC600E94316 /* NKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433305B719C45CC600E94316 /* NKViewController.m */; };
+		433305BA19C45CC600E94316 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 433305B919C45CC600E94316 /* Images.xcassets */; };
+		433305C119C45CC600E94316 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433305C019C45CC600E94316 /* XCTest.framework */; };
+		433305C219C45CC600E94316 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4333059E19C45CC500E94316 /* Foundation.framework */; };
+		433305C319C45CC600E94316 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433305A219C45CC500E94316 /* UIKit.framework */; };
+		433305CB19C45CC600E94316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 433305C919C45CC600E94316 /* InfoPlist.strings */; };
+		433305CD19C45CC600E94316 /* VideoChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433305CC19C45CC600E94316 /* VideoChatDemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		433305C419C45CC600E94316 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4333059319C45CC500E94316 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4333059A19C45CC500E94316;
+			remoteInfo = VideoChatDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4333059B19C45CC500E94316 /* VideoChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4333059E19C45CC500E94316 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		433305A019C45CC500E94316 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		433305A219C45CC500E94316 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		433305A619C45CC500E94316 /* VideoChatDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoChatDemo-Info.plist"; sourceTree = "<group>"; };
+		433305A819C45CC500E94316 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		433305AA19C45CC500E94316 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		433305AC19C45CC500E94316 /* VideoChatDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoChatDemo-Prefix.pch"; sourceTree = "<group>"; };
+		433305AD19C45CC500E94316 /* NKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKAppDelegate.h; sourceTree = "<group>"; };
+		433305AE19C45CC500E94316 /* NKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKAppDelegate.m; sourceTree = "<group>"; };
+		433305B119C45CC600E94316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		433305B419C45CC600E94316 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		433305B619C45CC600E94316 /* NKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NKViewController.h; sourceTree = "<group>"; };
+		433305B719C45CC600E94316 /* NKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKViewController.m; sourceTree = "<group>"; };
+		433305B919C45CC600E94316 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		433305BF19C45CC600E94316 /* VideoChatDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoChatDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		433305C019C45CC600E94316 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		433305C819C45CC600E94316 /* VideoChatDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoChatDemoTests-Info.plist"; sourceTree = "<group>"; };
+		433305CA19C45CC600E94316 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		433305CC19C45CC600E94316 /* VideoChatDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoChatDemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4333059819C45CC500E94316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433305A119C45CC500E94316 /* CoreGraphics.framework in Frameworks */,
+				433305A319C45CC500E94316 /* UIKit.framework in Frameworks */,
+				4333059F19C45CC500E94316 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		433305BC19C45CC600E94316 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433305C119C45CC600E94316 /* XCTest.framework in Frameworks */,
+				433305C319C45CC600E94316 /* UIKit.framework in Frameworks */,
+				433305C219C45CC600E94316 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4333059219C45CC500E94316 = {
+			isa = PBXGroup;
+			children = (
+				433305A419C45CC500E94316 /* VideoChatDemo */,
+				433305C619C45CC600E94316 /* VideoChatDemoTests */,
+				4333059D19C45CC500E94316 /* Frameworks */,
+				4333059C19C45CC500E94316 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4333059C19C45CC500E94316 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4333059B19C45CC500E94316 /* VideoChatDemo.app */,
+				433305BF19C45CC600E94316 /* VideoChatDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4333059D19C45CC500E94316 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4333059E19C45CC500E94316 /* Foundation.framework */,
+				433305A019C45CC500E94316 /* CoreGraphics.framework */,
+				433305A219C45CC500E94316 /* UIKit.framework */,
+				433305C019C45CC600E94316 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		433305A419C45CC500E94316 /* VideoChatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				433305AD19C45CC500E94316 /* NKAppDelegate.h */,
+				433305AE19C45CC500E94316 /* NKAppDelegate.m */,
+				433305B019C45CC600E94316 /* Main_iPhone.storyboard */,
+				433305B319C45CC600E94316 /* Main_iPad.storyboard */,
+				433305B619C45CC600E94316 /* NKViewController.h */,
+				433305B719C45CC600E94316 /* NKViewController.m */,
+				433305B919C45CC600E94316 /* Images.xcassets */,
+				433305A519C45CC500E94316 /* Supporting Files */,
+			);
+			path = VideoChatDemo;
+			sourceTree = "<group>";
+		};
+		433305A519C45CC500E94316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				433305A619C45CC500E94316 /* VideoChatDemo-Info.plist */,
+				433305A719C45CC500E94316 /* InfoPlist.strings */,
+				433305AA19C45CC500E94316 /* main.m */,
+				433305AC19C45CC500E94316 /* VideoChatDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		433305C619C45CC600E94316 /* VideoChatDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				433305CC19C45CC600E94316 /* VideoChatDemoTests.m */,
+				433305C719C45CC600E94316 /* Supporting Files */,
+			);
+			path = VideoChatDemoTests;
+			sourceTree = "<group>";
+		};
+		433305C719C45CC600E94316 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				433305C819C45CC600E94316 /* VideoChatDemoTests-Info.plist */,
+				433305C919C45CC600E94316 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4333059A19C45CC500E94316 /* VideoChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 433305D019C45CC600E94316 /* Build configuration list for PBXNativeTarget "VideoChatDemo" */;
+			buildPhases = (
+				4333059719C45CC500E94316 /* Sources */,
+				4333059819C45CC500E94316 /* Frameworks */,
+				4333059919C45CC500E94316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoChatDemo;
+			productName = VideoChatDemo;
+			productReference = 4333059B19C45CC500E94316 /* VideoChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		433305BE19C45CC600E94316 /* VideoChatDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 433305D319C45CC600E94316 /* Build configuration list for PBXNativeTarget "VideoChatDemoTests" */;
+			buildPhases = (
+				433305BB19C45CC600E94316 /* Sources */,
+				433305BC19C45CC600E94316 /* Frameworks */,
+				433305BD19C45CC600E94316 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				433305C519C45CC600E94316 /* PBXTargetDependency */,
+			);
+			name = VideoChatDemoTests;
+			productName = VideoChatDemoTests;
+			productReference = 433305BF19C45CC600E94316 /* VideoChatDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4333059319C45CC500E94316 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nick Kibish";
+				TargetAttributes = {
+					433305BE19C45CC600E94316 = {
+						TestTargetID = 4333059A19C45CC500E94316;
+					};
+				};
+			};
+			buildConfigurationList = 4333059619C45CC500E94316 /* Build configuration list for PBXProject "VideoChatDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4333059219C45CC500E94316;
+			productRefGroup = 4333059C19C45CC500E94316 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4333059A19C45CC500E94316 /* VideoChatDemo */,
+				433305BE19C45CC600E94316 /* VideoChatDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4333059919C45CC500E94316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433305B519C45CC600E94316 /* Main_iPad.storyboard in Resources */,
+				433305BA19C45CC600E94316 /* Images.xcassets in Resources */,
+				433305B219C45CC600E94316 /* Main_iPhone.storyboard in Resources */,
+				433305A919C45CC500E94316 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		433305BD19C45CC600E94316 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433305CB19C45CC600E94316 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4333059719C45CC500E94316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433305B819C45CC600E94316 /* NKViewController.m in Sources */,
+				433305AB19C45CC500E94316 /* main.m in Sources */,
+				433305AF19C45CC500E94316 /* NKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		433305BB19C45CC600E94316 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				433305CD19C45CC600E94316 /* VideoChatDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		433305C519C45CC600E94316 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4333059A19C45CC500E94316 /* VideoChatDemo */;
+			targetProxy = 433305C419C45CC600E94316 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		433305A719C45CC500E94316 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				433305A819C45CC500E94316 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		433305B019C45CC600E94316 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				433305B119C45CC600E94316 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		433305B319C45CC600E94316 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				433305B419C45CC600E94316 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		433305C919C45CC600E94316 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				433305CA19C45CC600E94316 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		433305CE19C45CC600E94316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		433305CF19C45CC600E94316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		433305D119C45CC600E94316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoChatDemo/VideoChatDemo-Prefix.pch";
+				INFOPLIST_FILE = "VideoChatDemo/VideoChatDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		433305D219C45CC600E94316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoChatDemo/VideoChatDemo-Prefix.pch";
+				INFOPLIST_FILE = "VideoChatDemo/VideoChatDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		433305D419C45CC600E94316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoChatDemo.app/VideoChatDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoChatDemo/VideoChatDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VideoChatDemoTests/VideoChatDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		433305D519C45CC600E94316 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VideoChatDemo.app/VideoChatDemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VideoChatDemo/VideoChatDemo-Prefix.pch";
+				INFOPLIST_FILE = "VideoChatDemoTests/VideoChatDemoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4333059619C45CC500E94316 /* Build configuration list for PBXProject "VideoChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				433305CE19C45CC600E94316 /* Debug */,
+				433305CF19C45CC600E94316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		433305D019C45CC600E94316 /* Build configuration list for PBXNativeTarget "VideoChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				433305D119C45CC600E94316 /* Debug */,
+				433305D219C45CC600E94316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		433305D319C45CC600E94316 /* Build configuration list for PBXNativeTarget "VideoChatDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				433305D419C45CC600E94316 /* Debug */,
+				433305D519C45CC600E94316 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4333059319C45CC500E94316 /* Project object */;
+}
