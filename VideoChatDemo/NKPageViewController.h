@@ -16,7 +16,7 @@
 }
 
 @property (strong, nonatomic) NSArray *controllers;
-@property (assign, nonatomic) NSInteger userID;
+@property (assign, nonatomic) NSUInteger userID;
 
 - (NKVideochatViewController *)videoChatController;
 

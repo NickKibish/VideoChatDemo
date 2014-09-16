@@ -39,6 +39,7 @@
 		433305CB19C45CC600E94316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 433305C919C45CC600E94316 /* InfoPlist.strings */; };
 		433305CD19C45CC600E94316 /* VideoChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433305CC19C45CC600E94316 /* VideoChatDemoTests.m */; };
 		436585DB19C87B3200B115B2 /* NKContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 436585DA19C87B3200B115B2 /* NKContactView.m */; };
+		436585DE19C8B88A00B115B2 /* NKChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436585DD19C8B88A00B115B2 /* NKChatViewController.m */; };
 		43B026BF19C5B9BE002E00D5 /* NKContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B026BE19C5B9BE002E00D5 /* NKContactsTableViewController.m */; };
 		43B026C119C60E08002E00D5 /* user-icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B026C019C60E08002E00D5 /* user-icon-512.png */; };
 		43B026C519C60F48002E00D5 /* NKVideochatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B026C419C60F48002E00D5 /* NKVideochatViewController.m */; };
@@ -98,6 +99,8 @@
 		433305CC19C45CC600E94316 /* VideoChatDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoChatDemoTests.m; sourceTree = "<group>"; };
 		436585D919C87B3200B115B2 /* NKContactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactView.h; sourceTree = "<group>"; };
 		436585DA19C87B3200B115B2 /* NKContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactView.m; sourceTree = "<group>"; };
+		436585DC19C8B88A00B115B2 /* NKChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKChatViewController.h; sourceTree = "<group>"; };
+		436585DD19C8B88A00B115B2 /* NKChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKChatViewController.m; sourceTree = "<group>"; };
 		43B026BD19C5B9BE002E00D5 /* NKContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactsTableViewController.h; sourceTree = "<group>"; };
 		43B026BE19C5B9BE002E00D5 /* NKContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactsTableViewController.m; sourceTree = "<group>"; };
 		43B026C019C60E08002E00D5 /* user-icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-icon-512.png"; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				43B026C419C60F48002E00D5 /* NKVideochatViewController.m */,
 				436585D919C87B3200B115B2 /* NKContactView.h */,
 				436585DA19C87B3200B115B2 /* NKContactView.m */,
+				436585DC19C8B88A00B115B2 /* NKChatViewController.h */,
+				436585DD19C8B88A00B115B2 /* NKChatViewController.m */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -429,6 +434,7 @@
 				43CFF5F419C61D230075A533 /* NKPageViewController.m in Sources */,
 				433305AB19C45CC500E94316 /* main.m in Sources */,
 				433305AF19C45CC500E94316 /* NKAppDelegate.m in Sources */,
+				436585DE19C8B88A00B115B2 /* NKChatViewController.m in Sources */,
 				43CFF5FB19C7037E0075A533 /* TPCircularBuffer.mm in Sources */,
 				43B026BF19C5B9BE002E00D5 /* NKContactsTableViewController.m in Sources */,
 				43B026C519C60F48002E00D5 /* NKVideochatViewController.m in Sources */,

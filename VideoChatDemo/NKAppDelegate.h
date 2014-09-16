@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "NKVideochatViewController.h"
+#import "NKChatViewController.h"
 
 @interface NKAppDelegate : UIResponder <UIApplicationDelegate, QBChatDelegate, UIAlertViewDelegate, AVAudioPlayerDelegate>
 {
@@ -17,9 +18,10 @@
     AVAudioPlayer *ringingPlayer;
 }
 
-@property (assign, nonatomic) int currentUser;
+@property (assign, nonatomic) NSUInteger currentUser;
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UIAlertView *callAlert;
+@property (strong, nonatomic) NKChatViewController *activeController;
 
 @property (strong, nonatomic) NKVideochatViewController *userVideoChat;
 @property (strong, nonatomic) NKVideochatViewController *oponentVideoChat;

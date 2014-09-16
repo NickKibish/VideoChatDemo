@@ -7,6 +7,9 @@
 //
 
 #import "NKPageViewController.h"
+#import "NKContactView.h"
+#import "NKChatViewController.h"
+#import "NKAppDelegate.h"
 
 @interface NKPageViewController ()
 
@@ -33,8 +36,13 @@
     NKVideochatViewController *videoChatController = [self.storyboard instantiateViewControllerWithIdentifier:@"CallController"];
     videoChatController.opponentID = [NSNumber numberWithInteger:self.userID];
     [videoChatController setupAudioCapture];
-    UIViewController *chatController = [self.storyboard instantiateViewControllerWithIdentifier:@"ChatController"];
-    UIViewController *userInfoController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserInfoController"];
+    
+    NKChatViewController *chatController = [self.storyboard instantiateViewControllerWithIdentifier:@"ChatController"];
+    chatController.opponentID = self.userID;
+    [NKAppDelegate sharedDelegate].activeController = chatController;
+    
+    NKContactView *userInfoController = [self.storyboard instantiateViewControllerWithIdentifier:@"UserInfoController"];
+    userInfoController.userID = self.userID;
     
     _controllers = [NSArray arrayWithObjects:userInfoController, videoChatController, chatController, nil];
     return _controllers;

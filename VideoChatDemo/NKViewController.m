@@ -36,7 +36,7 @@
     
     [QBRequest createSessionWithExtendedParameters:parameters successBlock:^(QBResponse *response, QBASession *session) {
         NKAppDelegate *appDelegate = (NKAppDelegate *)[UIApplication sharedApplication].delegate;
-        [QBChat instance].delegate = self;
+        [QBChat instance].delegate = [NKAppDelegate sharedDelegate];
         QBUUser *user = [QBUUser user];
         user.ID = session.userID;
         user.password = parameters.userPassword;
@@ -47,7 +47,7 @@
         [self dismissViewControllerAnimated:YES completion:nil];
     } errorBlock:^(QBResponse *response) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", "")
-                                                        message:[response.error description]
+                                                        message:@"Wron login or password"
                                                        delegate:nil
                                               cancelButtonTitle:NSLocalizedString(@"OK", "")
                                               otherButtonTitles:nil];

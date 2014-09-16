@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="istepanchenko7@gmail.com" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7E-1G-UgK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nick.kibish@gmail.com" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A7E-1G-UgK">
                                 <rect key="frame" x="240" y="242" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="istepanchenko7" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RbS-2w-Wkz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nick.kibish" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RbS-2w-Wkz">
                                 <rect key="frame" x="240" y="280" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -58,8 +58,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="Cell" id="Ici-Fr-Cqh">
+                                <rect key="frame" x="0.0" y="86" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ici-Fr-Cqh" id="uGG-8Q-zVB">
+                                    <rect key="frame" x="0.0" y="0.0" width="701" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -78,24 +80,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ug-O2-tfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-418" y="-451"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="auB-c2-2iu">
-            <objects>
-                <viewController storyboardIdentifier="UserInfoController" id="S0o-GU-7jF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mG8-eq-5V3"/>
-                        <viewControllerLayoutGuide type="bottom" id="haF-CU-Eek"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZNW-Ho-DSI">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OLR-j0-Rrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1613" y="-1885"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="4F9-Gz-vkA">
@@ -164,24 +148,6 @@
             </objects>
             <point key="canvasLocation" x="1745" y="-497"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="94x-N9-9Bf">
-            <objects>
-                <viewController storyboardIdentifier="ChatController" id="sDK-bc-hCz" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="s1P-ec-AA0"/>
-                        <viewControllerLayoutGuide type="bottom" id="KZ0-kR-Azb"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Fc-vg-BFp">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cmL-Db-04W" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1633" y="910"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="REj-RY-t6n">
             <objects>
@@ -199,6 +165,117 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="96s-DC-9fU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1444" y="-466"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="AgM-BY-Oht">
+            <objects>
+                <viewController storyboardIdentifier="ChatController" id="wOv-dJ-O1x" customClass="NKChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xj1-Vh-fs0"/>
+                        <viewControllerLayoutGuide type="bottom" id="J7d-4P-SfB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ceV-ul-vlR">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hTS-LL-mNu">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="980"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" id="hZg-9F-B2a">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hZg-9F-B2a" id="XeC-UN-myX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="wOv-dJ-O1x" id="IUz-js-Ii3"/>
+                                    <outlet property="delegate" destination="wOv-dJ-O1x" id="iVQ-tc-euY"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sD-ac-ycb">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="gmb-4q-cdz">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Jj0-fc-9W3">
+                                            <rect key="frame" x="20" y="7" width="682" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem title="Send" id="sEP-th-ltk">
+                                        <connections>
+                                            <action selector="send:" destination="wOv-dJ-O1x" id="Scy-MK-9Ul"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="messageField" destination="Jj0-fc-9W3" id="l0h-2Y-X6o"/>
+                        <outlet property="sendBtn" destination="sEP-th-ltk" id="9Ng-c8-uIm"/>
+                        <outlet property="tableView" destination="hTS-LL-mNu" id="nZM-CO-loh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyj-lb-V7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="645"/>
+        </scene>
+        <!--Contact View-->
+        <scene sceneID="bWe-QK-HFw">
+            <objects>
+                <viewController storyboardIdentifier="UserInfoController" id="V1O-8d-6T5" customClass="NKContactView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bHJ-Yi-RD1"/>
+                        <viewControllerLayoutGuide type="bottom" id="iyc-Li-qza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fS5-na-BOW">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ks-i2-NZi">
+                                <rect key="frame" x="297" y="460" width="175" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Удалить контакт">
+                                    <color key="titleColor" red="0.96862751250000001" green="0.0" blue="0.050980396570000003" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIJ-Gg-tEI">
+                                <rect key="frame" x="16" y="124" width="736" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kjq-JH-fbm">
+                                <rect key="frame" x="16" y="56" width="736" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5T-Wj-FpD">
+                                <rect key="frame" x="16" y="168" width="736" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="LoginLabe" destination="CIJ-Gg-tEI" id="Csi-mB-52F"/>
+                        <outlet property="emailLabel" destination="y5T-Wj-FpD" id="K1v-ug-nNM"/>
+                        <outlet property="fullNameLabel" destination="Kjq-JH-fbm" id="Tnr-Xl-HX9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikU-SQ-7WB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="-1650"/>
         </scene>
     </scenes>
     <resources>

@@ -37,7 +37,6 @@
 
 - (void)instanceChat
 {
-    [QBChat instance].delegate = self;
     [NSTimer scheduledTimerWithTimeInterval:30
                                      target:[QBChat instance]
                                    selector:@selector(sendPresence)
@@ -94,6 +93,12 @@
 - (void)chatCallDidStopByUser:(NSUInteger)userID status:(NSString *)status
 {
     NSLog(@"chat Call Did Stop By User %ld eith status: %@", userID, status);
+}
+
+- (void)chatDidReceiveMessage:(QBChatMessage *)message
+{
+    message.senderID = self.activeController.opponentID;
+    [self.activeController pushNewMessage:message];
 }
 
 - (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
