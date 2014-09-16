@@ -7,6 +7,8 @@
 //
 
 #import "NKViewController.h"
+#import "NKAppDelegate.h"
+#import "NKContactsTableViewController.h"
 
 @interface NKViewController ()
 
@@ -24,6 +26,33 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)signin:(id)sender
+{
+    QBSessionParameters *parameters = [QBSessionParameters new];
+    parameters.userEmail = _login.text;
+    parameters.userPassword = _password.text;
+    
+    [QBRequest createSessionWithExtendedParameters:parameters successBlock:^(QBResponse *response, QBASession *session) {
+        NKAppDelegate *appDelegate = (NKAppDelegate *)[UIApplication sharedApplication].delegate;
+        [QBChat instance].delegate = self;
+        QBUUser *user = [QBUUser user];
+        user.ID = session.userID;
+        user.password = parameters.userPassword;
+        [[QBChat instance] loginWithUser:user];
+        appDelegate.currentUser = user.ID;
+        
+        [self.tableView login];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } errorBlock:^(QBResponse *response) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", "")
+                                                        message:[response.error description]
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"OK", "")
+                                              otherButtonTitles:nil];
+        [alert show];
+    }];
 }
 
 @end

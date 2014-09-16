@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NKContactsTableViewController.h"
 
 @interface NKViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *login;
+@property (strong, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) IBOutlet UILabel *errorLabel;
+@property (strong, nonatomic) NKContactsTableViewController *tableView;
 
+- (IBAction)signin:(id)sender;
 @end

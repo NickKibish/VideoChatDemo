@@ -38,6 +38,15 @@
 		433305C319C45CC600E94316 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433305A219C45CC500E94316 /* UIKit.framework */; };
 		433305CB19C45CC600E94316 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 433305C919C45CC600E94316 /* InfoPlist.strings */; };
 		433305CD19C45CC600E94316 /* VideoChatDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 433305CC19C45CC600E94316 /* VideoChatDemoTests.m */; };
+		436585DB19C87B3200B115B2 /* NKContactView.m in Sources */ = {isa = PBXBuildFile; fileRef = 436585DA19C87B3200B115B2 /* NKContactView.m */; };
+		43B026BF19C5B9BE002E00D5 /* NKContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B026BE19C5B9BE002E00D5 /* NKContactsTableViewController.m */; };
+		43B026C119C60E08002E00D5 /* user-icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B026C019C60E08002E00D5 /* user-icon-512.png */; };
+		43B026C519C60F48002E00D5 /* NKVideochatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B026C419C60F48002E00D5 /* NKVideochatViewController.m */; };
+		43B026CC19C6145B002E00D5 /* NKPageViewControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 43B026CB19C6145B002E00D5 /* NKPageViewControllerDelegate.m */; };
+		43CFF5F419C61D230075A533 /* NKPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CFF5F319C61D230075A533 /* NKPageViewController.m */; };
+		43CFF5FA19C7037E0075A533 /* TPCircularBuffer+AudioBufferList.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43CFF5F719C7037E0075A533 /* TPCircularBuffer+AudioBufferList.mm */; };
+		43CFF5FB19C7037E0075A533 /* TPCircularBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43CFF5F919C7037E0075A533 /* TPCircularBuffer.mm */; };
+		43CFF5FD19C741D80075A533 /* ringing.wav in Resources */ = {isa = PBXBuildFile; fileRef = 43CFF5FC19C741D80075A533 /* ringing.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +96,22 @@
 		433305C819C45CC600E94316 /* VideoChatDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VideoChatDemoTests-Info.plist"; sourceTree = "<group>"; };
 		433305CA19C45CC600E94316 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		433305CC19C45CC600E94316 /* VideoChatDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoChatDemoTests.m; sourceTree = "<group>"; };
+		436585D919C87B3200B115B2 /* NKContactView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactView.h; sourceTree = "<group>"; };
+		436585DA19C87B3200B115B2 /* NKContactView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactView.m; sourceTree = "<group>"; };
+		43B026BD19C5B9BE002E00D5 /* NKContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKContactsTableViewController.h; sourceTree = "<group>"; };
+		43B026BE19C5B9BE002E00D5 /* NKContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKContactsTableViewController.m; sourceTree = "<group>"; };
+		43B026C019C60E08002E00D5 /* user-icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-icon-512.png"; sourceTree = "<group>"; };
+		43B026C319C60F48002E00D5 /* NKVideochatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKVideochatViewController.h; sourceTree = "<group>"; };
+		43B026C419C60F48002E00D5 /* NKVideochatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKVideochatViewController.m; sourceTree = "<group>"; };
+		43B026CA19C6145B002E00D5 /* NKPageViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKPageViewControllerDelegate.h; sourceTree = "<group>"; };
+		43B026CB19C6145B002E00D5 /* NKPageViewControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKPageViewControllerDelegate.m; sourceTree = "<group>"; };
+		43CFF5F219C61D230075A533 /* NKPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKPageViewController.h; sourceTree = "<group>"; };
+		43CFF5F319C61D230075A533 /* NKPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKPageViewController.m; sourceTree = "<group>"; };
+		43CFF5F619C7037E0075A533 /* TPCircularBuffer+AudioBufferList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TPCircularBuffer+AudioBufferList.h"; sourceTree = "<group>"; };
+		43CFF5F719C7037E0075A533 /* TPCircularBuffer+AudioBufferList.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "TPCircularBuffer+AudioBufferList.mm"; sourceTree = "<group>"; };
+		43CFF5F819C7037E0075A533 /* TPCircularBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPCircularBuffer.h; sourceTree = "<group>"; };
+		43CFF5F919C7037E0075A533 /* TPCircularBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TPCircularBuffer.mm; sourceTree = "<group>"; };
+		43CFF5FC19C741D80075A533 /* ringing.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ringing.wav; sourceTree = "<group>"; };
 		EEE78A2B084647658F5F3AA7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -186,7 +211,10 @@
 				433305B319C45CC600E94316 /* Main_iPad.storyboard */,
 				433305B619C45CC600E94316 /* NKViewController.h */,
 				433305B719C45CC600E94316 /* NKViewController.m */,
-				433305B919C45CC600E94316 /* Images.xcassets */,
+				43B026BD19C5B9BE002E00D5 /* NKContactsTableViewController.h */,
+				43B026BE19C5B9BE002E00D5 /* NKContactsTableViewController.m */,
+				43CFF5F519C7037E0075A533 /* TPCircularBuffer */,
+				43B026C919C60F9B002E00D5 /* Pages */,
 				433305A519C45CC500E94316 /* Supporting Files */,
 			);
 			path = VideoChatDemo;
@@ -195,6 +223,9 @@
 		433305A519C45CC500E94316 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				43CFF5FC19C741D80075A533 /* ringing.wav */,
+				43B026C219C60E13002E00D5 /* Images */,
+				433305B919C45CC600E94316 /* Images.xcassets */,
 				433305A619C45CC500E94316 /* VideoChatDemo-Info.plist */,
 				433305A719C45CC500E94316 /* InfoPlist.strings */,
 				433305AA19C45CC500E94316 /* main.m */,
@@ -219,6 +250,40 @@
 				433305C919C45CC600E94316 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		43B026C219C60E13002E00D5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				43B026C019C60E08002E00D5 /* user-icon-512.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		43B026C919C60F9B002E00D5 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				43B026CA19C6145B002E00D5 /* NKPageViewControllerDelegate.h */,
+				43B026CB19C6145B002E00D5 /* NKPageViewControllerDelegate.m */,
+				43CFF5F219C61D230075A533 /* NKPageViewController.h */,
+				43CFF5F319C61D230075A533 /* NKPageViewController.m */,
+				43B026C319C60F48002E00D5 /* NKVideochatViewController.h */,
+				43B026C419C60F48002E00D5 /* NKVideochatViewController.m */,
+				436585D919C87B3200B115B2 /* NKContactView.h */,
+				436585DA19C87B3200B115B2 /* NKContactView.m */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
+		43CFF5F519C7037E0075A533 /* TPCircularBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				43CFF5F619C7037E0075A533 /* TPCircularBuffer+AudioBufferList.h */,
+				43CFF5F719C7037E0075A533 /* TPCircularBuffer+AudioBufferList.mm */,
+				43CFF5F819C7037E0075A533 /* TPCircularBuffer.h */,
+				43CFF5F919C7037E0075A533 /* TPCircularBuffer.mm */,
+			);
+			path = TPCircularBuffer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +365,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43B026C119C60E08002E00D5 /* user-icon-512.png in Resources */,
 				433305B519C45CC600E94316 /* Main_iPad.storyboard in Resources */,
 				433305BA19C45CC600E94316 /* Images.xcassets in Resources */,
+				43CFF5FD19C741D80075A533 /* ringing.wav in Resources */,
 				433305B219C45CC600E94316 /* Main_iPhone.storyboard in Resources */,
 				433305A919C45CC500E94316 /* InfoPlist.strings in Resources */,
 			);
@@ -355,9 +422,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436585DB19C87B3200B115B2 /* NKContactView.m in Sources */,
 				433305B819C45CC600E94316 /* NKViewController.m in Sources */,
+				43CFF5FA19C7037E0075A533 /* TPCircularBuffer+AudioBufferList.mm in Sources */,
+				43B026CC19C6145B002E00D5 /* NKPageViewControllerDelegate.m in Sources */,
+				43CFF5F419C61D230075A533 /* NKPageViewController.m in Sources */,
 				433305AB19C45CC500E94316 /* main.m in Sources */,
 				433305AF19C45CC500E94316 /* NKAppDelegate.m in Sources */,
+				43CFF5FB19C7037E0075A533 /* TPCircularBuffer.mm in Sources */,
+				43B026BF19C5B9BE002E00D5 /* NKContactsTableViewController.m in Sources */,
+				43B026C519C60F48002E00D5 /* NKVideochatViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,6 +576,7 @@
 				INFOPLIST_FILE = "VideoChatDemo/VideoChatDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -521,6 +596,7 @@
 				INFOPLIST_FILE = "VideoChatDemo/VideoChatDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
